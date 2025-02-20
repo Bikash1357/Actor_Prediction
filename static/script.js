@@ -5,7 +5,7 @@ async function getPrediction() {
     let min_age = document.getElementById("min_age").value;
     let max_age = document.getElementById("max_age").value;
 
-    let url = `http://actor-prediction.vercel.app/predict?genres=${encodeURIComponent(genres)}&min_height=${min_height}&max_height=${max_height}&min_age=${min_age}&max_age=${max_age}`;
+    let url = `https://actor-prediction.vercel.app/predict?genres=${encodeURIComponent(genres)}&min_height=${min_height}&max_height=${max_height}&min_age=${min_age}&max_age=${max_age}`;
 
     try {
         let response = await fetch(url);
