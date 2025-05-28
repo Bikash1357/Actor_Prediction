@@ -52,6 +52,7 @@ function getPrediction() {
     resultsDiv.classList.add("show");
 }
 
+        
 
 function displayResults(actors) {
     let resultsDiv = document.getElementById("results");
