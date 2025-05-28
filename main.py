@@ -18,7 +18,7 @@ app = FastAPI(title="Actor Prediction API", description="Explore ML Actor Predic
 # Enable CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Allow frontend requests from this origin
+    allow_origins=["http://127.0.0.1:5500"],  # Allow frontend requests from this origin
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
